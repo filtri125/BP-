@@ -10,12 +10,12 @@ VALUES ('2026-04-24', '11:30:00', 3, 2), ('2026-04-24', '11:30:00', 6, 1), ('202
 SELECT *
 FROM WBHeatedWaste;
 
-/*Query that summarises the total number of waste transactions*/
+/*Query that summarises the total number of heated waste transactions*/
 
 SELECT COUNT(TransactionID) AS NumberOfWasteTransactions
 FROM WBHeatedWaste;
 
-/*Query that summarises the total amount of waste*/
+/*Query that summarises the total amount of heated waste*/
 
 SELECT SUM(HeatedWaste) AS TotalWaste
 FROM WBHeatedWaste;
@@ -25,7 +25,7 @@ FROM WBHeatedWaste;
 SELECT COUNT(TransactionID) AS NumberOfWasteTransactions, SUM(HeatedWaste) AS TotalWaste
 FROM WBHeatedWaste;
 
-/*Get the name of the product being wasted rather than the AmbientProductID*/
+/*Get the name of the product being wasted rather than the HeatedProductID*/
 
 SELECT hw.TransactionID, hw.Date, hw.Time, hw.HeatedWaste, hc.HeatedProductName, hc.HeatedProductCategory
 FROM WBHeatedWaste AS hw
