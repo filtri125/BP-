@@ -1,2 +1,2 @@
 # BP Waste Analysis
-This project will look at the amount of waste that BP throws out each day and give reccommendations as to what can be done to minimise this.
+This project will look at the amount of waste that BP Silverdale throws out each day and give reccommendations as to what can be done to minimise this.
